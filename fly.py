@@ -12,21 +12,21 @@ from djitellopy import Tello
 # https://github.com/damiafuentes/DJITelloPy/blob/master/examples/simple.py
 
 tello = Tello()
-
 tello.connect()
-tello.takeoff()
-
 tello.set_speed(20)
-
-tello.move_left(100)
-tello.move_right(100)
-tello.move_forward(100)
-tello.move_back(100)
-
-tello.land()
-tello.takeoff()
-
-tello.rotate_clockwise(360)
-tello.rotate_counter_clockwise(360)
-
-tello.land()
+tello.takeoff(72)
+tello.rotate_clockwise(180)
+tello.land(72)
+tello.takeoff(72)
+tello.move_forward(70)
+tello.rotate_counter_clockwise(90)
+tello.move_forward(86)
+tello.land(72)
+tello.takeoff(72)
+tello.rotate_counter_clockwise(90)
+tello.move_forward(62)
+tello.rotate_counter_clockwise(90)
+tello.move_forward(86)
+tello.rotate_clockwise(90)
+tello.move_forward(126)
+tello.land(72)
